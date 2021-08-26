@@ -36,10 +36,13 @@ function getModuleInfo(file) {
       [
         "@babel/preset-env",
         {
-          "useBuiltIns": false
-          // targets: {
-          //   browsers: ["last 2 IE versions"],
-          // },
+          "useBuiltIns": "usage",
+          "corejs": "2.0",
+          "debug": false,
+          "targets": {
+            // browsers: ["last 2 Chrome versions"]
+            // browsers: ["last 2 IE versions"]
+          },
         }]
     ],
   });
