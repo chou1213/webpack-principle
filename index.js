@@ -36,8 +36,8 @@ function getModuleInfo(file) {
       [
         "@babel/preset-env",
         {
-          "useBuiltIns": "usage",
-          "corejs": "2.0",
+          "useBuiltIns": "entry",
+          "corejs": "3.0",
           "debug": false,
           "targets": {
             // browsers: ["last 2 Chrome versions"]
